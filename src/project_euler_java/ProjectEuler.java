@@ -5,8 +5,14 @@ public class ProjectEuler {
 
   
   public static void main(String[] args) {
-    Exercise1 solution = new Exercise1();
-    solution.solve();
+    Solvable[] solutions = new Solvable[641];
+    solutions[0]  = new Exercise1();
+    for (Solvable solvable : solutions) {
+      if (solvable != null) {
+        solvable.solve();
+      }
+      
+    }
     
   }
 
